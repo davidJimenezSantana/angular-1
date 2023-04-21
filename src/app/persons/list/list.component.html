@@ -1,0 +1,19 @@
+<h2>Lista personas</h2>
+
+<h4 *ngIf="personDelete else mostrarSubTitle">
+    Persona borrada {{personDelete}}
+</h4>
+<ng-template #mostrarSubTitle>
+    Lista actual:
+</ng-template>
+
+<div class="listar">
+    <ul class="list-group">
+        <li *ngIf="lista.length == 0 else verlista" class="list-group-item">Lista vacia</li>
+        <ng-template #verlista>
+            <li *ngFor="let l of lista" class="list-group-item">{{l}}</li>
+        </ng-template>        
+        
+    </ul>
+</div>
+<button *ngIf="lista.length != 0" class="btn btn-outline-danger"  (click)="deletePerson()">Borrar persona</button>

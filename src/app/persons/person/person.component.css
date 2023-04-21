@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+
+.detail-person{
+    padding: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+
+.opcion-detail-person{    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+dd{
+    font-weight: bold;
+}

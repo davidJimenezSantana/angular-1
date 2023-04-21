@@ -1,0 +1,13 @@
+.listar{
+    display: flex;
+    justify-content: center;
+}
+
+.list-person{
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    border: 2px solid rgb(233, 140, 140);
+}
+h2{
+    text-align: center;
+}

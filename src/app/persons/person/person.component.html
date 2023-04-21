@@ -1,0 +1,40 @@
+<h1>{{ titlePerson }}</h1>
+
+<dl class="detail-person">
+    <div class="row">
+        <div class="col-3">
+            <td>Nombre: </td>
+            <dd>{{nombre}}</dd>
+        </div>
+        <div class="col-3">
+            <td>Apellido: </td>
+            <dd>{{apellido}}</dd>
+        </div>
+        <div class="col-3">
+            <td>Correo: </td>
+            <dd>{{correo}}</dd>
+        </div>
+        <div class="col-3">
+            <td>Edad: </td>
+            <dd>{{edad}}</dd>
+        </div>
+    </div>
+</dl>
+<div class="opcion-detail-person">    
+    <button *ngIf="nombre !== 'David'" (click)='setNombre()' class="btn btn-primary">
+        Cambiar Nombre
+    </button>
+    <button *ngIf="apellido !== 'Alejandro'" (click)='setApellido()' class="btn btn-primary">
+        Cambiar Apellido
+    </button>
+    <button *ngIf="correo !== 'david@correo'" (click)='setCorreo()' class="btn btn-primary">
+        Cambiar Correo
+    </button>
+    <button *ngIf="edad !== 40" (click)='setEdad()' class="btn btn-primary">
+        Cambiar Edad
+    </button>
+
+    <button (click)='reset()' class="btn btn-warning">
+        reset
+    </button>
+</div>
