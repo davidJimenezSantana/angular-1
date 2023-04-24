@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './component.default/app.component';
+import { AppComponent } from './app.component';
 
 import { counterModule } from './counter/counter.module';
 import { PersonModule } from './persons/person.module';
+import { EmployedModule } from './employed/employed.module';
 
 
 
@@ -15,7 +16,8 @@ import { PersonModule } from './persons/person.module';
   imports: [
     BrowserModule,
     counterModule,
-    PersonModule
+    PersonModule,
+    EmployedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

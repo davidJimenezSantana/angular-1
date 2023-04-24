@@ -1,0 +1,11 @@
+<h1 class="mt-5 mb-5">Gestion empleados</h1>
+<hr>
+
+<div class="row">
+    <div class="col-7">
+        <app-list-employed (eliminarEmpleado)="elimianrEmpleado($event)" [listEmployed]="employesList"></app-list-employed>
+    </div>
+    <div class="col-5">
+        <app-add-employed (nuevoEmpleado)="agregarEmpleado($event)"></app-add-employed>
+    </div>
+</div>
